@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: linear-gradient(-45, #e3ddd9, #36221c 50%);*/
+    background: #f0cac5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    justify-items: center;
+    align-content: center;
+
+    align-items: center;
+}
+
+/* Aca comienza la barra de navegacion*/
+.header {
+    width: 100%;
+    height: 65px;
+    background: whitesmoke;
+    position: absolute;
+}
+
+.conteiner {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.franis a {
+    float: left;
+    line-height: 65px;
+    font-family: 'Dancing Script', cursive;
+    list-style: none;
+    text-decoration: none;
+    color: #663c4c;
+}
+
+.menu {
+    float: right;
+    line-height: 65px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.menu a {
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #663c4c;
+    transition: all .75s ease;
+}
+
+.menu a:hover {
+    background: #997479;
+    color: whitesmoke;
+}
+
+.menu .submenu {
+    background: whitesmoke;
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.menu .submenu li a {
+    line-height: 50px;
+}
+
+.menu ul li a:hover+ul,
+.menu .submenu:hover {
+    display: block;
+}
+
+/*fin de la barra de navegacion*/
+
+
+/* Aca comienxa el footer */
+
+.footer {
+    position: relative;
+    background: #664c4f;
+    width: 100%;
+    padding-top: 30px;
+    color: white;
+    margin-top: auto;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+
+}
+
+.titulo h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+    line-height: 3rem;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.titulo p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.red-social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 .7rem 0;
+}
+
+.red-social ul {
+    margin: 10px 0 10px 0;
+}
+
+.red-social li {
+    margin: 0 10px;
+}
+
+.red-social a {
+    text-decoration: none;
+    color: white;
+}
+
+.red-social a i {
+    font-size: 2.2rem;
+    transition: color .4 ease;
+}
+
+.red-social a:hover i {
+    color: #997479;
+}
+
+.copy {
+    background: #664c4f;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copy p {
+    font-size: 14px;
+    word-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.copy span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/*fin del footer*/
+
+
+/* formulario de contacto*/
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "consulta"
+        "nombre"
+        "apellido"
+        "telefono"
+        "email"
+        "mensaje "
+        "botn"
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    gap: 20px;
+    width: 55%;
+    height: 85%;
+    padding: 13px 0;
+    background: whitesmoke;
+    color: #663c4c;
+    margin-top: 75px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    justify-content: center;
+
+    align-content: center;
+
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.consulta {
+    grid-area: consulta;
+    justify-content: center;
+    align-content: center;
+    margin-left: 45px;
+}
+
+.nombre {
+    grid-area: nombre;
+    width: 100%;
+}
+
+.nombre input,
+textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    width: 100%;
+    transform: all .3s;
+    border-bottom: 2px solid #663c4c;
+    background-color: whitesmoke;
+}
+
+.apellido {
+    grid-area: apellido;
+    width: 100%;
+}
+
+.apellido input,
+textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    width: 100%;
+    transform: all .3s;
+    border-bottom: 2px solid #663c4c;
+    background-color: whitesmoke;
+}
+
+.numero {
+    grid-area: telefono;
+    width: 100%;
+}
+
+.numero input,
+textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 5px 0;
+    width: 100%;
+    transform: all .3s;
+    border-bottom: 2px solid #663c4c;
+    background-color: whitesmoke;
+}
+
+.email {
+    grid-area: email;
+    width: 100%;
+}
+
+.email input,
+textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 5px 0;
+    width: 100%;
+    transform: all .3s;
+    border-bottom: 2px solid #663c4c;
+    background-color: whitesmoke;
+}
+
+.mensaje {
+    grid-area: mensaje;
+    width: 100%;
+}
+
+.mensaje textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 5px 0;
+    width: 100%;
+    transform: all .3s;
+    border-bottom: 2px solid #663c4c;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom-color: #a184af;
+}
+
+.botn {
+    grid-area: botn;
+    margin-left: 45px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 6px 0;
+    background: #663c4c;
+    border-radius: 5px;
+    width: 200px;
+    color: whitesmoke;
+}
+
+/*Fin del contacto*/
+
+.carousel{
+    margin-top: 65px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.img-fluid{
+    width: 100%;
+}
+.portada{
+    width: 100%;
+}
+/*inicio de sesion*/
+  
+
+}
