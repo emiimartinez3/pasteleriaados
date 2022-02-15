@@ -25,9 +25,9 @@ body {
 /* Aca comienza la barra de navegacion*/
 .header {
     width: 100%;
-    height: 65px;
+    height: 80px;
     background: whitesmoke;
-    position: absolute;
+    
 }
 
 .conteiner {
@@ -37,7 +37,7 @@ body {
 
 .franis a {
     float: left;
-    line-height: 65px;
+    line-height: 80px;
     font-family: 'Dancing Script', cursive;
     list-style: none;
     text-decoration: none;
@@ -46,7 +46,7 @@ body {
 
 .menu {
     float: right;
-    line-height: 65px;
+    line-height: 80px;
 }
 
 .menu ul {
@@ -201,7 +201,7 @@ body {
     padding: 13px 0;
     background: whitesmoke;
     color: #663c4c;
-    margin-top: 75px;
+    margin-top: 90px;
     margin-bottom: 10px;
     border-radius: 5px;
     justify-content: center;
@@ -327,13 +327,39 @@ button {
     width: 100%;
     margin-bottom: 20px;
 }
-.img-fluid{
-    width: 100%;
-}
+
 .portada{
     width: 100%;
+
 }
 /*inicio de sesion*/
   
-
+.bien {
+    text-align: center;
+    justify-content: center;
 }
+
+.ingreso{
+    padding: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.marge{
+    margin-left: 0px;
+    margin-right: auto;
+    padding: 0px;
+}
+
+.tam{
+     width: 55%;
+    height: 70%px;
+    margin:0px;
+    overflow: hidden;
+}
+.ancho{
+    width: 100%;
+    height: 100%;
+}
+
+
