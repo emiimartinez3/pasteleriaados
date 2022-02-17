@@ -15,11 +15,9 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
-    position: relative;
-    justify-items: center;
-    align-content: center;
-
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /* Aca comienza la barra de navegacion*/
@@ -27,7 +25,7 @@ body {
     width: 100%;
     height: 80px;
     background: whitesmoke;
-    
+
 }
 
 .conteiner {
@@ -42,6 +40,7 @@ body {
     list-style: none;
     text-decoration: none;
     color: #663c4c;
+    margin-top: 11px;
 }
 
 .menu {
@@ -201,7 +200,7 @@ body {
     padding: 13px 0;
     background: whitesmoke;
     color: #663c4c;
-    margin-top: 90px;
+    margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     justify-content: center;
@@ -298,6 +297,7 @@ textarea {
     width: 100%;
     transform: all .3s;
     border-bottom: 2px solid #663c4c;
+    background-color: whitesmoke;
 }
 
 input:focus,
@@ -322,44 +322,96 @@ button {
 
 /*Fin del contacto*/
 
-.carousel{
-    margin-top: 65px;
+.carousel {
+    margin-top: 0px;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.portada{
+.portada {
     width: 100%;
 
 }
+
 /*inicio de sesion*/
-  
-.bien {
+
+.tam {
+    width: 70%;
+    height: 70%px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+.bien h3 {
     text-align: center;
     justify-content: center;
+    font-size: 35px;
+    color: #663c4c;
+    margin-top: 20px;
 }
 
-.ingreso{
-    padding: 10px;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.marge{
-    margin-left: 0px;
+.ingreso {
+    padding: 0px 0px;
     margin-right: auto;
-    padding: 0px;
+    justify-content: center;
+    margin-right: 20px;
 }
 
-.tam{
-     width: 55%;
-    height: 70%px;
-    margin:0px;
-    overflow: hidden;
+.ingreso input,
+textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 5px 0;
+    width: 100%;
+    transform: all .3s;
+    border-bottom: 2px solid #663c4c;
+    background-color: white;
+    border-radius: none;
 }
-.ancho{
+
+input:focus,
+textarea:focus {
+    border-bottom-color: #a184af;
+}
+
+.ancho {
     width: 100%;
     height: 100%;
+}
+
+.botnn button {
+    margin-bottom: 30px;
+    margin-left: 110px;
+}
+
+/*fotos del body*/
+
+.grid-foto {
+    display: grid;
+    grid-template-areas:
+        "foto-uno"
+        "foto-dos";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin-bottom: 20px;
+}
+
+.grid-fot {
+    display: grid;
+    grid-template-areas:
+        "foto-tres"
+        "foto-cuatro";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin-bottom: 20px;
+    
 }
 
 
